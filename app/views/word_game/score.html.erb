@@ -1,0 +1,21 @@
+
+<h1>Oh my, thats exciting</h1>
+
+<h2>Heres your score:</h2>
+<!-- <%= @answer_hash %> -->
+<ul class="list-no_decoration">
+  <li>
+    <h3><%= @answer_hash[:message] %> </h3>
+  </li>
+  <li>
+    <h3>Time: <%= @answer_hash[:time] %> </h3>
+  </li>
+  <li>
+    <h3>Score: <%= @answer_hash[:score] %> </h3>
+  </li>
+  <li>
+    <h3>In french that means: <%= @answer_hash[:translation] %> </h3>
+  </li>
+</ul>
+
+<%=link_to 'Play again', '/game', class: "btn btn-primary"%>

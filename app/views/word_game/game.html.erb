@@ -1,0 +1,13 @@
+<h1>Word game</h1>
+<p>Find the longest word in the shotest time possible</p>
+
+
+<h2>Here are your letters</h2>
+
+<h4><%=@grid%></h4>
+
+<form class="guess_form" action="/score">
+  <input type="text" placeholder="Your guess" name="guess">
+  <input type="hidden" placeholder="Your guess" name="grid" value="<%=@grid%>">
+  <input type="submit" id="btn">
+</form>
